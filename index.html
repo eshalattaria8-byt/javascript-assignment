@@ -1,0 +1,138 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <h1>JavaScript Assignment</h1>
+
+    <h2>Question 1: First and Last Name</h2>
+    <p>Create variables for first name and last name and display the full name.</p>
+
+    <h2>Question 2: Arithmetic Operations</h2>
+    <p>Perform addition, subtraction, multiplication, and division using three numbers.</p>
+
+    <h2>Question 3: Temperature Checker</h2>
+    <p>Check whether the temperature is freezing or not freezing.</p>
+
+    <h2>Question 4: Age Category</h2>
+    <p>Check whether a person is a Child, Teenager, Adult, or Senior Citizen.</p>
+
+    <h2>Question 5: Electricity Bill</h2>
+    <p>Calculate the electricity bill according to the given unit rates.</p>
+    <p>First 100 units: Rs. 10 per unit</p>
+    <p>Next 100 units: Rs. 15 per unit</p>
+    <p>Above 200 units: Rs. 20 per unit</p>
+
+    <h2>Question 6: Traffic Light</h2>
+    <p>Red: Stop, Yellow: Ready, Green: Go. Otherwise, display Invalid Color.</p>
+
+    <h2>Question 7: Pocket Money</h2>
+    <p>If pocket money is greater than Rs. 500, display "You can buy a gift"; otherwise, display "Save your money".</p>
+
+    <h2>Question 8: Shopping Amount</h2>
+    <p>If shopping amount is Rs. 2000 or more, display "Free Delivery"; otherwise, display "Delivery Charges Apply".</p>
+
+    <script>
+        // Question 1: First and Last Name //
+        let firstName = "Eshal";
+        let lastName = "Attaria";
+        console.log("Full Name:" + firstName + " " + lastName);
+        
+        // Question 2: Arithmetic Operations//
+        let num1 = 21;
+        let num2 = 17;
+        let num3 = 7;
+        console.log("Addition:" + (num1 + num2 + num3));
+        console.log("Subtraction:" + (num1 - num2 - num3));
+        console.log("Multiplication:" + (num1 * num2 * num3));
+        console.log("Division:" + (num1 / num2 / num3));
+
+        // Question 3: Temperature Checker//
+        let temperature = Number(prompt("Enter temperature :"));
+        if (temperature <= 0) 
+        {
+        console.log("Freezing");
+        } 
+        else {
+        console.log("Not freezing");
+        }      
+        // Question 4: Age Category//
+       let age = Number(prompt("Enter your age:"));
+        if (age >= 0 && age <= 12)
+        {
+            console.log("Child");
+        } 
+        else if (age <= 19) 
+        {
+            console.log("Teenager");
+        } 
+        else if (age <= 59) 
+        {
+            console.log("Adult");
+        } 
+        else 
+        {
+            console.log("Senior Citizen");
+        } 
+        
+        // Question 5: Electricity Bill Calculator//
+       let units = Number(prompt("Enter electricity units:"));
+        let bill = 0;
+        if (units <= 100) 
+        {
+            bill = units * 10;
+        } 
+        else if (units <= 200) 
+        {
+            bill = (100 * 10) + ((units - 100) * 15);
+        }
+         else 
+        {
+            bill = (100 * 10) + (100 * 15) + ((units - 200) * 20);
+        }
+        console.log("Electricity Bill: Rs" + bill);
+
+        // Question 6: Traffic Light//
+        let color = "Yellow"
+        if (color === "Red") 
+        {
+            console.log("Stop");
+        } 
+        else if (color === "Yellow") 
+        {
+            console.log("Ready");
+        } 
+        else if (color === "Green") 
+        {
+            console.log("Go");
+        } 
+        else {
+            console.log("Invalid Color");
+        }
+
+         // Question 7: Pocket Money Checker//
+       let pocketMoney = Number(prompt("Enter your pocket money:"));
+        if (pocketMoney > 500) 
+        {
+            console.log("You can buy a gift");
+        } 
+        else {
+            console.log("Save your money");
+        }
+        
+        // Question 8: Free Delivery Checker//
+        let shoppingAmount =1800;
+        if (shoppingAmount >= 2000)
+         {
+            console.log("Free Delivery");
+        } 
+        else
+         {
+            console.log("Delivery Charges");
+        }
+
+    </script>
+</body>
+</html>
